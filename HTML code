@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-place-bg-container">
+            <h1 class="favourite-place-main-heading">Favourite places</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahaldetailedview')">
+                <div class="mr-5">
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">The place which comes to our mind when we say India is Taj Mahal</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/taj-mahal-scenic-morning-view-taj-mahal-monument-unesco-world-heritage-site-agra-india_130181-185.jpg?size=626&amp;ext=jpg" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTirumalaTempledetailedview')">
+                <div class="mr-5">
+                    <h1 class="favourite-place-card-heading">Tirumala Temple</h1>
+                    <p class="favourite-place-card-description">Tirumala Temple is a sacred temple where people from all over the country come to visit.</p>
+                </div>
+                <img src="https://swarajya.gumlet.io/swarajya/2020-05/5037bcba-d983-4d4c-bcc2-6c5bcd562033/Tirumala_090615__1_.jpg?w=640&amp;q=75&amp;auto=format,compress&amp;format=webp" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempledetailedview')">
+                <div class="mr-5">
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">Golden Temple is located in Amritsar,Punjab.It is a revered Gurudwar which is a worship place for sikhs.</p>
+                </div>
+                <img src="https://www.global-gallivanting.com/wp-content/uploads/2016/08/IMG_20160728_122500-1024x856.jpg" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionCharminardetailedview')">
+                <div class="mr-5">
+                    <h1 class="favourite-place-card-heading">Charminar</h1>
+                    <p class="favourite-place-card-description">Situated in Hyderabad,India,Charminar is one of the major tourist attractions of India</p>
+                </div>
+                <img src="https://media.istockphoto.com/id/1215274990/photo/high-wide-angle-view-of-charminar-in-the-night.webp?a=1&b=1&s=612x612&w=0&k=20&c=sQggGGYHLaIX4wlJzKYeLkEZHthBO6vLY-Rwwo75KxA=" class="favourite-place-card-image" />
+            </div>
+            <button class="favourite-places-back-button btn btn-dark" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionTajMahaldetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">
+                Detailed View
+            </h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/49HTIoCccDY?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">The Taj Mahal is a mausoleum complex in Agra, Uttar Pradesh, India, built by Mughal Emperor Shah Jahan in the 17th century as a tribute to his beloved wife, Mumtaz Mahal. The complex houses the tombs of Shah Jahan and Mumtaz Mahal, and is considered the finest example of Mughal architecture, a blend of Indian, Persian, and Islamic styles.Some famous places to visit near Taj Mahal are</p>
+                </div>
+                <ul class="detailed-view-list">
+                    <li>Agra Fort</li>
+                    <li>Fatehpur Sikri</li>
+                    <li>Mehtab Bagh</li>
+                    <li>Akbar Tomb</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+                <button class="detailed-view-back-button btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionTirumalaTempledetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">
+                Detailed View
+            </h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gWNjdd0ri2c?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Tirumala Temple</h1>
+                    <p class="detailed-view-card-description">The Venkateswara Temple, also known as Tirumala Temple or Tirupati Balaji Temple, is a Hindu temple located in Tirumala, Tirupati district, Andhra Pradesh, India. It is dedicated to Lord Venkateswara, a form of Vishnu, who is believed to have appeared on earth to save mankind from the trials and troubles of Kali Yuga.Some famous places to visit near Taj Mahal are</p>
+                </div>
+                <ul class="detailed-view-list">
+                    <li>Sri Kapileswara Swamy Temple</li>
+                    <li>Sri Venkateswara National Park</li>
+                    <li>Sri Padmavathi Ammavari Temple</li>
+                    <li>Silathoranam</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+                <button class="detailed-view-back-button btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionGoldenTempledetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">
+                Detailed View
+            </h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HWuRpzdoVa4?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                    <p class="detailed-view-card-description">The Golden Temple, also known as Harmandir Sahib, is a significant Sikh Gurdwara located in Amritsar, Punjab, India. Initiated by Guru Ram Das in 1581 and completed by Guru Arjan Dev in 1604, it holds profound historical and spiritual importance for Sikhs. Renowned for its stunning architecture, the temple is built on a 67-foot square platform in the center of the sacred Amrit Sarovar (Pool of Nectar), with its marble and copper structure overlaid with gold foil, giving it its distinctive golden appearance.Some famous places to visit near Taj Mahal are</p>
+                </div>
+                <ul class="detailed-view-list">
+                    <li>Jallianwala Bagh</li>
+                    <li>Partition Museum</li>
+                    <li>Gurbiana Temple</li>
+                    <li>Gobindgarh Fort</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+                <button class="detailed-view-back-button btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionCharminardetailedview">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">
+                Detailed View
+            </h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uMQYbfgHVxk?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Charminar</h1>
+                    <p class="detailed-view-card-description">The Charminar is an iconic monument located in Hyderabad, India. Built in 1591 by Muhammad Quli Qutb Shah,it commemorates the founding of Hyderabad and the end of a plague epidemic.
+                     The structure features four grand arches, each crowned by a towering minaret, giving it its name "Charminar," which means "Four Minarets." The Charminar is not only a historical symbol of Hyderabad but also a bustling center of commerce and culture,
+                     particularly famous for its pearls and bangles.Some famous places to visit near Taj Mahal are</p>
+                </div>
+                <ul class="detailed-view-list">
+                    <li>Mecca Masjid</li>
+                    <li>Chownmahalla Palace</li>
+                    <li>Laad Bazar</li>
+                    <li>Salar Jung Museum</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column justify-content-end">
+                <button class="detailed-view-back-button btn btn-dark" onclick="display('sectionFavouritePlaces')">Back</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
